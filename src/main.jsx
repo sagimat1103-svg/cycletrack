@@ -1,4 +1,4 @@
-import React from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -17,9 +17,9 @@ window.addEventListener("unhandledrejection", (e) => showError(e.reason));
 
 try {
   ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
+    <StrictMode>
       <App />
-    </React.StrictMode>
+    </StrictMode>
   );
 } catch (err) {
   showError(err);
